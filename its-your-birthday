@@ -1,5 +1,4 @@
 #!/bin/bash
 
-. say-it
-
-say_it < <(cat birthday.lyric | sed "s/{name}/${2:-Lisa}/g;s/{relation}/${1:-sister}/g;s/{what}/${3:-kiss}/g;s/{whom}/${4:-boy}/g")
+eval "$(curl -fsSL https://github.com/Logaritmisk/say-birthday/raw/master/say-it)"
+say_it < <(curl -fsSL https://github.com/Logaritmisk/say-birthday/raw/master/birthday.lyric | sed "s/{name}/${2:-Lisa}/g;s/{relation}/${1:-sister}/g;s/{what}/${3:-kiss}/g;s/{whom}/${4:-boy}/g")
