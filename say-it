@@ -1,0 +1,10 @@
+#!/bin/bash
+
+
+function say_it {
+  if which -s say; then
+    say $@
+  elif which -s espeak; then
+    espeak $@
+  fi
+}

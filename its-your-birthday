@@ -1,0 +1,5 @@
+#!/bin/bash
+
+. say-it
+
+say_it < <(cat birthday.lyric | sed "s/{name}/${2:-Lisa}/g;s/{relation}/${1:-sister}/g;s/{what}/${3:-kiss}/g;s/{whom}/${4:-boy}/g")
