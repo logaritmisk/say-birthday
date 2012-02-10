@@ -2,9 +2,9 @@
 
 
 function say_it {
-  if which -s say; then
+  if which say > /dev/null; then
     say $@
-  elif which -s espeak; then
+  elif which espeak > /dev/null; then
     espeak $@
   fi
 }
