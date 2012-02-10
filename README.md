@@ -1,3 +1,3 @@
-# Fun fun fun
+# It's your birthday!
 
-    bash -c "$(curl -fsSL https://github.com/Logaritmisk/say-fun/raw/master/say-fun)"
+    curl -fsSL https://github.com/Logaritmisk/say-birthday/raw/master/its-your-birthday | bash -s sister Lisa kiss boy
